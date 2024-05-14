@@ -27,7 +27,6 @@ h2 {
 
 .cta {
     --shadowColor: #D2B7F5;
-    display: flex;
     flex-wrap: wrap;
     background: #D2B7F5;
     max-width: 50rem;
@@ -71,6 +70,7 @@ h2 {
     outline: 2px solid #000; /* Чёрная рамка */
     border: 3px solid #D2B7F5;
     border-radius: 10px; /* Радиус скругления */
+    flex-direction: column;
 }
 
 
@@ -123,3 +123,6 @@ h2 {
 	justify-content: space-between;
 }
 
+p {
+    font-size: 20px;
+}
