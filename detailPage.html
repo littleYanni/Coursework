@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dorama.Jin</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../base/base.css">
+    <link rel="stylesheet" type="text/css" href="detailPage.css">
+</head>
+<script>
+    // Загрузка заголовка...
+    fetch('../base/base.html')
+        .then(response => response.text())
+        .then(html => document.getElementById('header').innerHTML = html);
+</script>
+<header id="header"></header>
+<body>
+    <div id="mainBody"></div>
+</body>
+<script src="../base/baseAuth.js"></script>
+<script type="module" src="detailPage.js"></script>
+</html>
