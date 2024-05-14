@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dorama.Jin</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../base/base.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<script>
+    // Загрузка заголовка...
+    fetch('../base/base.html')
+        .then(response => response.text())
+        .then(html => document.getElementById('header').innerHTML = html);
+</script>
+<header id="header"></header>
+<body>
+<div id="mainBody">
+    <div id="countryFilterContainer">
+        <p>Фильтр по стране: </p>
+        <div class="select">
+            <select id="countryFilter">
+                <option value="no-filter">Любая страна</option>
+                <option value="Южная Корея">Южная Корея</option>
+                <option value="Китай">Китай</option>
+                <option value="Япония">Япония</option>
+                <option value="Таиланд">Таиланд</option>
+            </select>
+        </div>
+    </div>
+    <div id="doramasCards"></div>
+</div>
+</body>
+<footer>
+    <div class="xml">
+        <XML ID="dsoBook">
+            <?xml version="1.0"?>
+            <PNONE>
+                Контактный номер
+            </PNONE>
+
+            <NUMBER>
+                +375293611196
+            </NUMBER>
+        </XML>
+    </div>
+</footer>
+<script src="../base/baseAuth.js"></script>
+<script type="module" src="main.js"></script>
+</html>

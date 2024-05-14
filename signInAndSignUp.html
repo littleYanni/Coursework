@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dorama.Jin</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../base/base.css">
+    <link rel="stylesheet" type="text/css" href="signInAndSignUp.css">
+</head>
+<body>
+<h2>Добро пожаловать на Dorama.Jin</h2>
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form id="signUpForm" action="#" method="POST">
+            <h1>Создать новый аккаунт</h1>
+            <input type="text" name="name" placeholder="Имя"/>
+            <input type="email" name="email" placeholder="Email"/>
+            <input type="password" name="password" placeholder="Пароль"/>
+            <button id="signUpFormButton">Создать</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form id="signInForm" action="#" method="POST">
+            <h1>Авторизоваться</h1>
+            <input type="email" name="email" placeholder="Email"/>
+            <input type="password" name="password" placeholder="Пароль"/>
+            <button id="signInFormButton">Вход</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>С возвращением в Dorama.Jin</h1>
+                <p>Авторизуйтесь, чтобы посмотреть лучшие дорамы</p>
+                <button class="ghost" id="signIn">Вход</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Привет, фанат дорам в Dorama.Jin</h1>
+                <p>Вводи свои данные и погрузись в мир Дорам вместе с нами</p>
+                <button class="ghost" id="signUp">Регистрация</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="signInAndSignUp.js"></script>
+<script src="../base/loadDoramas.js"></script>
+</html>

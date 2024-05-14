@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../base/base.css">
+    <link rel="stylesheet" type="text/css" href="userCards.css">
+</head>
+<script>
+    fetch('../base/base.html')
+        .then(response => response.text())
+        .then(html => document.getElementById('header').innerHTML = html);
+</script>
+<header id="header"></header>
+<body>
+<div style="text-align: center">
+    <h2 id="typeTitle"></h2>
+</div>
+<div id="userCards"></div>
+</body>
+<script src="../base/baseAuth.js"></script>
+<script type="module" src="userCards.js"></script>
+</html>
